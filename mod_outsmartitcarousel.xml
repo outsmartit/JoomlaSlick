@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+    <name>mod_outsmartitcarousel</name>
+    <author>Diederik</author>
+    <creationDate>August 2015</creationDate>
+    <copyright>Copyright (C) 2005 - 2015 Open Source Matters. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>info@outsmartit.be</authorEmail>
+    <authorUrl>www.outsmartit.be</authorUrl>
+    <version>1.0.1</version>
+    <description>MOD_OUTSMARTITCAROUSEL_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_outsmartitcarousel">mod_outsmartitcarousel.php</filename>
+        <folder>tmpl</folder>
+        <folder>assets</folder>
+        <filename>mod_outsmartitcarousel.xml</filename>
+        <filename>index.html</filename>
+    </files>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_outsmartitcarousel.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_outsmartitcarousel.sys.ini</language>
+        <language tag="en-GB">nl-NL/nl-NL.mod_outsmartitcarousel.ini</language>
+        <language tag="en-GB">nl-NL/nl-NL.mod_outsmartitcarousel.sys.ini</language>
+    </languages>
+    <help key="JHELP_EXTENSIONS_MODULE_MANAGER_OUTSMARTITCAROUSEL" />
+    <config>
+        <fields name="params">
+            <fieldset name="images">
+                <field
+                    name="image1"
+                    type="media"
+                    label="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE1_LABEL"
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE1_DESC"/>
+                <field
+                    name="image2"
+                    type="media"
+                    label="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE2_LABEL"
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE2_DESC"/>
+                <field
+                    name="image3"
+                    type="media"
+                    label="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE3_LABEL"
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE3_DESC"/>
+                <field
+                    name="image4"
+                    type="media"
+                    label="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE4_LABEL"
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE4_DESC"/>
+                <field
+                    name="image5"
+                    type="media"
+                    label="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE5_LABEL"
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE5_DESC"/>
+                <field
+                    name="image6"
+                    type="media"
+                    label="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE6_LABEL"
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE_DESC"/>
+                <field
+                    name="image7"
+                    type="media"
+                    label="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE7_LABEL"
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE_DESC"/>
+                <field
+                    name="image8"
+                    type="media"
+                    label="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE8_LABEL"
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE_DESC"/>
+                <field
+                    name="image9"
+                    type="media"
+                    label="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE9_LABEL"
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE_DESC"/>
+                <field
+                    name="image10"
+                    type="media"
+                    label="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE10_LABEL"
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE_DESC"/>
+            </fieldset>
+            <fieldset name="general">
+                <field name="carousel_type"
+                type = "list"
+                label="MOD_OUTSMARTITCAROUSEL_FIELD_TYPE_LABEL"
+                description="MOD_OUTSMARTITCAROUSEL_FIELD_TYPE_DESC"
+                       default="O">
+                    <option value="O">MOD_OUTSMARTITCAROUSEL_ONE</option>
+                    <option value="I">MOD_OUTSMARTITCAROUSEL_IMAGES</option>
+                    <option value="L">MOD_OUTSMARTITCAROUSEL_LAZY</option>
+                </field>
+                <field name="nrOfItems"
+                type = "integer"
+                label="MOD_OUTSMARTITCAROUSEL_FIELD_ITEMS_LABEL"
+                description="MOD_OUTSMARTITCAROUSEL_FIELD_ITEMS_DESC"
+                       default="3" first="2" last="5" step="1"/> 
+                <field name="CarSpeed"
+                type = "integer"
+                label="MOD_OUTSMARTITCAROUSEL_FIELD_SPEED_LABEL"
+                description="MOD_OUTSMARTITCAROUSEL_FIELD_SPEED_DESC"
+                       default="3000" first="1000" last="10000" step="1000"/>
+                <field name="pagination"
+                type = "radio"
+                class="btn-group"
+                label="MOD_OUTSMARTITCAROUSEL_FIELD_PAGINATION_LABEL"
+                description="MOD_OUTSMARTITCAROUSEL_FIELD_PAGINATION_DESC"
+                       default="1">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                    
+                </field>
+                <field name="add_jquery"
+                type = "radio"
+                class="btn-group"
+                label="MOD_OUTSMARTITCAROUSEL_FIELD_JQUERY_LABEL"
+                description="MOD_OUTSMARTITCAROUSEL_FIELD_JQUERY_DESC"
+                       default="1">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                    
+                </field>
+            </fieldset>
+
+            <fieldset
+                name="advanced">
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+                <field
+                    name="moduleclass_sfx"
+                    type="textarea" rows="3"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field
+                    name="cache"
+                    type="list"
+                    default="0"
+                    label="COM_MODULES_FIELD_CACHING_LABEL"
+                    description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option
+                        value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
+
+
+

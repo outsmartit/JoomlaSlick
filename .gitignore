@@ -523,3 +523,4 @@
 /index.php
 /joomla.xml
 /*.txt
+*DS_Store
