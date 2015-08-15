@@ -19,8 +19,8 @@
     <languages folder="language">
         <language tag="en-GB">en-GB/en-GB.mod_outsmartitcarousel.ini</language>
         <language tag="en-GB">en-GB/en-GB.mod_outsmartitcarousel.sys.ini</language>
-        <language tag="en-GB">nl-NL/nl-NL.mod_outsmartitcarousel.ini</language>
-        <language tag="en-GB">nl-NL/nl-NL.mod_outsmartitcarousel.sys.ini</language>
+        <language tag="nl-NL">nl-NL/nl-NL.mod_outsmartitcarousel.ini</language>
+        <language tag="nl-NL">nl-NL/nl-NL.mod_outsmartitcarousel.sys.ini</language>
     </languages>
     <help key="JHELP_EXTENSIONS_MODULE_MANAGER_OUTSMARTITCAROUSEL" />
     <config>
@@ -32,50 +32,100 @@
                     label="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE1_LABEL"
                     description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE1_DESC"/>
                 <field
+                    name="caption1"
+                    type="text"
+                    label="MOD_OUTSMARTITCAROUSEL_FIELD_CAPTION1_LABEL"
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_CAPTION1_DESC"/>
+                <field
                     name="image2"
                     type="media"
                     label="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE2_LABEL"
                     description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE2_DESC"/>
+                <field
+                    name="caption2"
+                    type="text"
+                    label="MOD_OUTSMARTITCAROUSEL_FIELD_CAPTION2_LABEL"
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_CAPTION2_DESC"/>
                 <field
                     name="image3"
                     type="media"
                     label="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE3_LABEL"
                     description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE3_DESC"/>
                 <field
+                    name="caption3"
+                    type="text"
+                    label="MOD_OUTSMARTITCAROUSEL_FIELD_CAPTION3_LABEL"
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_CAPTION3_DESC"/>
+                <field
                     name="image4"
                     type="media"
                     label="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE4_LABEL"
                     description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE4_DESC"/>
+                <field
+                    name="caption4"
+                    type="text"
+                    label="MOD_OUTSMARTITCAROUSEL_FIELD_CAPTION4_LABEL"
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_CAPTION4_DESC"/>
                 <field
                     name="image5"
                     type="media"
                     label="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE5_LABEL"
                     description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE5_DESC"/>
                 <field
+                    name="caption5"
+                    type="text"
+                    label="MOD_OUTSMARTITCAROUSEL_FIELD_CAPTION5_LABEL"
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_CAPTION5_DESC"/>
+                <field
                     name="image6"
                     type="media"
                     label="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE6_LABEL"
-                    description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE_DESC"/>
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE6_DESC"/>
+                <field
+                    name="caption6"
+                    type="text"
+                    label="MOD_OUTSMARTITCAROUSEL_FIELD_CAPTION6_LABEL"
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_CAPTION6_DESC"/>
                 <field
                     name="image7"
                     type="media"
                     label="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE7_LABEL"
-                    description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE_DESC"/>
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE7_DESC"/>
+                <field
+                    name="caption7"
+                    type="text"
+                    label="MOD_OUTSMARTITCAROUSEL_FIELD_CAPTION7_LABEL"
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_CAPTION7_DESC"/>
                 <field
                     name="image8"
                     type="media"
                     label="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE8_LABEL"
-                    description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE_DESC"/>
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE8_DESC"/>
+                <field
+                    name="caption8"
+                    type="text"
+                    label="MOD_OUTSMARTITCAROUSEL_FIELD_CAPTION8_LABEL"
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_CAPTION8_DESC"/>
                 <field
                     name="image9"
                     type="media"
                     label="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE9_LABEL"
-                    description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE_DESC"/>
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE9_DESC"/>
+                <field
+                    name="caption9"
+                    type="text"
+                    label="MOD_OUTSMARTITCAROUSEL_FIELD_CAPTION9_LABEL"
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_CAPTION9_DESC"/>
                 <field
                     name="image10"
                     type="media"
                     label="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE10_LABEL"
-                    description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE_DESC"/>
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_IMAGE10_DESC"/>
+                <field
+                    name="caption10"
+                    type="text"
+                    label="MOD_OUTSMARTITCAROUSEL_FIELD_CAPTION10_LABEL"
+                    description="MOD_OUTSMARTITCAROUSEL_FIELD_CAPTION10_DESC"/>
             </fieldset>
             <fieldset name="general">
                 <field name="carousel_type"
@@ -144,6 +194,11 @@
             </fieldset>
         </fields>
     </config>
+    <updateservers>
+        <server type="extension" priority="1" name="mod_outsmartitcarousel">
+            http://www.outsmartit.be/updates/outsmartitcarousel.xml
+        </server>
+    </updateservers>
 </extension>
 
 

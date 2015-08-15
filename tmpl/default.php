@@ -50,34 +50,14 @@ if ($gumberCarousel == 'O') {
 ?>
 
 <div class="<?php echo $carousel_id; ?>" >
-    <?php if($gumberimage1) : ?>
-    <img src="<?php echo $gumberimage1; ?>" alt="mytext1">
-    <?php endif; ?>
-    <?php if($gumberimage2) : ?>
-    <img src="<?php echo $gumberimage2; ?>" alt="mytext2">
-    <?php endif; ?>
-    <?php if($gumberimage3) : ?>
-    <img src="<?php echo $gumberimage3; ?>" alt="mytext3">
-    <?php    endif; ?>
-    <?php if($gumberimage4) : ?>
-    <img src="<?php echo $gumberimage4; ?>" alt="mytext4">
-    <?php    endif; ?>
-    <?php if($gumberimage5) : ?>
-    <img src="<?php echo $gumberimage5; ?>" alt="mytext5">
-    <?php    endif; ?>
-    <?php if($gumberimage6) : ?>
-    <img src="<?php echo $gumberimage6; ?>" alt="mytext6">
-    <?php    endif; ?>
-     <?php if($gumberimage7) : ?>
-    <img src="<?php echo $gumberimage7; ?>" alt="mytext7">
-    <?php    endif; ?>
-     <?php if($gumberimage8) : ?>
-    <img src="<?php echo $gumberimage8; ?>" alt="mytext8">
-    <?php    endif; ?>
-     <?php if($gumberimage9) : ?>
-    <img src="<?php echo $gumberimage9; ?>" alt="mytext9">
-    <?php    endif; ?>
-     <?php if($gumberimage10) : ?>
-    <img src="<?php echo $gumberimage10; ?>" alt="mytext10">
-    <?php    endif; ?>
+
+    <?php for ($i = 1; $i < 11; $i++) {
+        $number= 'image'.$i;
+    $captionnr='caption'.$i;
+        if($car_img[$number]){
+            
+            echo '<div class="out_slide"><img src="'. $car_img[$number].' " alt="mytext"><div class="out_caption"><span>'.$car_img[$captionnr].'</span></div></div>';
+        }
+    }
+    ?>
 </div>
