@@ -142,6 +142,29 @@
                 label="MOD_OUTSMARTITCAROUSEL_FIELD_ITEMS_LABEL"
                 description="MOD_OUTSMARTITCAROUSEL_FIELD_ITEMS_DESC"
                        default="3" first="2" last="5" step="1"/> 
+                <field name="scrollitems"
+                type = "integer"
+                label="MOD_OUTSMARTITCAROUSEL_FIELD_SCROLLITEMS_LABEL"
+                description="MOD_OUTSMARTITCAROUSEL_FIELD_SCROLLITEMS_DESC"
+                       default="3" first="2" last="5" step="1"/> 
+                <field name="autoplay"
+                type = "radio"
+                class="btn-group"
+                label="MOD_OUTSMARTITCAROUSEL_FIELD_AUTOPLAY_LABEL"
+                description="MOD_OUTSMARTITCAROUSEL_FIELD_AUTOPLAY_DESC"
+                       default="1">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="pauseonhover"
+                type = "radio"
+                class="btn-group"
+                label="MOD_OUTSMARTITCAROUSEL_FIELD_PAUSEHOVER_LABEL"
+                description="MOD_OUTSMARTITCAROUSEL_FIELD_PAUSEHOVER_DESC"
+                       default="1">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
                 <field name="CarSpeed"
                 type = "integer"
                 label="MOD_OUTSMARTITCAROUSEL_FIELD_SPEED_LABEL"
@@ -152,6 +175,36 @@
                 class="btn-group"
                 label="MOD_OUTSMARTITCAROUSEL_FIELD_PAGINATION_LABEL"
                 description="MOD_OUTSMARTITCAROUSEL_FIELD_PAGINATION_DESC"
+                       default="1">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                    
+                </field>
+                <field name="arrows"
+                type = "radio"
+                class="btn-group"
+                label="MOD_OUTSMARTITCAROUSEL_FIELD_ARROWS_LABEL"
+                description="MOD_OUTSMARTITCAROUSEL_FIELD_ARROWS_DESC"
+                       default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                    
+                </field>
+                <field name="centermode"
+                type = "radio"
+                class="btn-group"
+                label="MOD_OUTSMARTITCAROUSEL_FIELD_CENTERMODE_LABEL"
+                description="MOD_OUTSMARTITCAROUSEL_FIELD_CENTERMODE_DESC"
+                       default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                    
+                </field>
+                <field name="mycaption"
+                type = "radio"
+                class="btn-group"
+                label="MOD_OUTSMARTITCAROUSEL_FIELD_CAPTION_LABEL"
+                description="MOD_OUTSMARTITCAROUSEL_FIELD_CAPTION_DESC"
                        default="1">
                     <option value="1">JYES</option>
                     <option value="0">JNO</option>

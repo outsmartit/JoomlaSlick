@@ -12,35 +12,37 @@ if ($jq == 1) {
 JHtml::_('jquery.framework');}
 $document->addScript(JURI::base() . 'modules/mod_outsmartitcarousel/assets/slick/slick.min.js');
 
-if ($gumberCarousel == 'O') {
+if ($CarouselType == 'O') {
     $document->addScriptDeclaration('
    	 jQuery(document).ready(function(){
   		jQuery(".'.$carousel_id.'").slick({
-   			 arrows:false,
+   			 arrows:'.$arrows.',
    			 autoplay:true,
-   			 autoplaySpeed:'.$gumberspeed.',
+   			 autoplaySpeed:'.$CarouselSpeed.',
+                         dots:'.$paginationbool.',   
   			});
 		})');
-} elseif ($gumberCarousel == 'I') {
+} elseif ($CarouselType == 'I') {
     $document->addScriptDeclaration('
    	 jQuery(document).ready(function(){
   		jQuery(".'.$carousel_id.'").slick({
-   			 arrows:false,
+   			 arrows:'.$arrows.',
    			 autoplay:true,
-   			 autoplaySpeed:'.$gumberspeed.',
-                         slidesToShow: ' . $gumberitems . ',
-                         slidesToScroll: 2
+   			 autoplaySpeed:'.$CarouselSpeed.',
+                             dots:'.$paginationbool.',  
+                         slidesToShow: ' . $CarouselItems . ',
+                         slidesToScroll: '.$skrollItems.',
   			});
 		})');
-}elseif ($gumberCarousel == 'L') {
+}elseif ($CarouselType == 'L') {
     $document->addScriptDeclaration('
    	 jQuery(document).ready(function(){
   		jQuery(".'.$carousel_id.'").slick({
-   			 arrows:false,
+   			 arrows:'.$arrows.',
    			 autoplay:true,
                          lazyLoad: "ondemand",
    			 autoplaySpeed:1000,
-                         slidesToShow: ' . $gumberitems . ',
+                         slidesToShow: ' . $CarouselItems . ',
                          slidesToScroll: 1
   			});
 		})');
@@ -55,9 +57,13 @@ if ($gumberCarousel == 'O') {
         $number= 'image'.$i;
     $captionnr='caption'.$i;
         if($car_img[$number]){
+            if($caption){
+                echo '<div class="out_slide"><img src="'. $car_img[$number].' " alt="mytext"><div class="out_caption"><span>'.$car_img[$captionnr].'</span></div></div>';
+            }else{
+            echo '<img src="'. $car_img[$number].' " alt="'.$car_img[$captionnr].'"> ';
+            }
             
-            echo '<div class="out_slide"><img src="'. $car_img[$number].' " alt="mytext"><div class="out_caption"><span>'.$car_img[$captionnr].'</span></div></div>';
-        }
+            }
     }
     ?>
 </div>

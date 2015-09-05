@@ -1,18 +1,34 @@
 <?php
 
 /**
- * @package : Joomla.site
- * @subpackage Carousel module
+ * @package     Joomla.Site
+ * @subpackage  mod_outsmartitcarousel
+ *
+ * @copyright   Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 defined('_JEXEC') or die;
+
 $document = JFactory::getDocument();
 $document->addStyleSheet(JURI::base() . '/modules/mod_outsmartitcarousel/assets/slick/slick-theme.css');
 $document->addStyleSheet(JURI::base() . '/modules/mod_outsmartitcarousel/assets/slick/slick.css');
 $document->addStyleSheet(JURI::base() . '/modules/mod_outsmartitcarousel/assets/outsmartitcarousel.css');
-$gumberCarousel = $params->get('carousel_type');
-$gumberspeed = $params->get('CarSpeed');
-$gumberitems = $params->get('nrOfItems');
-$pagination = $params->get('pagination');
+$CarouselType = $params->get('carousel_type');
+$CarouselSpeed = $params->get('CarSpeed');
+$CarouselItems = $params->get('nrOfItems');
+$skrollItems = $params->get('scrollitems',2);
+$autoplay = $params->get('autoplay');
+$pause = $params->get('pauseonhover');
+$centermode = $params->get('centermode');
+$pagination = $params->get('pagination',1);
+$caption = $params->get('mycaption',0);
+$arrows = $params->get('arrows');
+if ($arrows){
+    $arrows = 'true';
+}
+else{
+    $arrows = 'false';
+}
 if ($pagination){
     $paginationbool = 'true';
 }
